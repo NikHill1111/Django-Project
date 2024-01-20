@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <title>Home Page</title>
+    </head>
+
+<nav class="navbar">
+    <ul>
+        <l1>Nav Bar</li>
+    </ul>
+</nav>
+
+<main>
+
+{% block mainContent %}
+{% endblock mainConten t%}
+
+<body>
+
+    <h1>From the Template</h1>
+    {%% if not todos %}
+        <h1>No Todos Found</h1>
+    {% endif %}
+    
+</body>
